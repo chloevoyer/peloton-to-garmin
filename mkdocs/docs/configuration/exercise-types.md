@@ -12,6 +12,7 @@
   Circuit
   Strength
   Stretching
+  Pilates
   Yoga
   Meditation
 ```
