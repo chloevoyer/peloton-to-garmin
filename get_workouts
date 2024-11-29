@@ -1,0 +1,53 @@
+# These are the standard fitness disciplines available in Peloton
+FITNESS_DISCIPLINES = [
+    'bike_bootcamp',    # Bike Bootcamp
+    'cardio',           # Cardio
+    'circuit',          # Circuit
+    'cycling',          # Cycling
+    'meditation',       # Meditation
+    'running',          # Running (includes indoor/outdoor)
+    'strength',         # Strength
+    'stretching',       # Stretching
+    'walking',          # Walking (includes indoor/outdoor)
+    'yoga',            # Yoga
+    'bootcamp',         # Tread Bootcamp
+    'rowing',           # Rowing
+    'pilates',         # Pilates
+    'bike',            # Alternative cycling reference
+    'tread',           # Alternative treadmill reference
+    'outdoor'          # Outdoor activities
+]
+
+# More detailed mapping with display names
+FITNESS_DISCIPLINE_DISPLAY_NAMES = {
+    'bike_bootcamp': 'Bike Bootcamp',
+    'cardio': 'Cardio',
+    'circuit': 'Circuit',
+    'cycling': 'Cycling',
+    'meditation': 'Meditation',
+    'running': 'Running',
+    'strength': 'Strength',
+    'stretching': 'Stretching',
+    'walking': 'Walking',
+    'yoga': 'Yoga',
+    'bootcamp': 'Tread Bootcamp',
+    'rowing': 'Rowing',
+    'pilates': 'Pilates',
+    'bike': 'Cycling',
+    'tread': 'Treadmill',
+    'outdoor': 'Outdoor'
+}
+
+# Function to get display name
+def get_discipline_display_name(discipline_slug):
+    """
+    Convert a discipline slug to its display name
+    """
+    return FITNESS_DISCIPLINE_DISPLAY_NAMES.get(discipline_slug, discipline_slug)
+
+# Example usage:
+if __name__ == "__main__":
+    print("Available Fitness Disciplines:")
+    print("-" * 30)
+    for discipline in sorted(FITNESS_DISCIPLINES):
+        print(f"{discipline}: {get_discipline_display_name(discipline)}")
