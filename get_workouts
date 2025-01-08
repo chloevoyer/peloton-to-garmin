@@ -9,13 +9,13 @@ FITNESS_DISCIPLINES = [
     'strength',         # Strength
     'stretching',       # Stretching
     'walking',          # Walking (includes indoor/outdoor)
-    'yoga',            # Yoga
+    'yoga',             # Yoga
     'bootcamp',         # Tread Bootcamp
     'rowing',           # Rowing
-    'pilates',         # Pilates
-    'bike',            # Alternative cycling reference
-    'tread',           # Alternative treadmill reference
-    'outdoor'          # Outdoor activities
+    'pilates',          # Pilates
+    'bike',             # Alternative cycling reference
+    'tread',            # Alternative treadmill reference
+    'outdoor'           # Outdoor activities
 ]
 
 # More detailed mapping with display names
