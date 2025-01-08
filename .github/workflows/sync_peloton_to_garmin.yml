@@ -1,8 +1,4 @@
-# This is a workflow that will automatically sync your Peloton rides with Garmin
-
-name: Sync workflow
-
-# Controls when the action will run.
+name: Sync Meditation Workouts
 on:
   workflow_dispatch:
     inputs:
@@ -18,13 +14,15 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    # The type of runner that the job will run on
     container: 
-      image:  philosowaffle/peloton-to-garmin:console-stable
+      image: philosowaffle/peloton-to-garmin:console-stable
+    
     steps:
     - name: Set env
       run: echo "OUTPUT_DIR=/app/output" >> $GITHUB_ENV
+    
     - run: mkdir -p ${{ env.OUTPUT_DIR }}
+    
     - name: Create config file
       env:
         DEFAULT_WORKOUT_NUM: 5
@@ -47,7 +45,10 @@ jobs:
           },
           "Peloton": {
             "NumWorkoutsToDownload": ${{ github.event.inputs.workoutsToDownload || env.DEFAULT_WORKOUT_NUM }},
-            "WorkoutTypes": ["Meditation"]
+            "ClassTypes": {
+              "Include": ["meditation"],
+              "Exclude": []
+            }
           },
           "Garmin": {
             "Upload": true,
@@ -67,6 +68,7 @@ jobs:
           }
         }
         EOT
+    
     - run: /app/ConsoleClient
       if: ${{ env.P2G_PELOTON__EMAIL && env.P2G_PELOTON__PASSWORD && env.P2G_GARMIN__EMAIL && env.P2G_GARMIN__PASSWORD }}
       working-directory: /app
@@ -76,9 +78,8 @@ jobs:
         P2G_GARMIN__EMAIL: ${{ secrets.P2G_GARMIN__EMAIL }}
         P2G_GARMIN__PASSWORD: ${{ secrets.P2G_GARMIN__PASSWORD }}
         TZ: America/Toronto
-
+    
     - name: archive files
-      # saveLocalCopy can be set when workflow action is manually run otherwise it's always skipped 
       if: ${{ github.event.inputs.saveLocalCopy == 'true' }}
       run: |
         apt-get update
