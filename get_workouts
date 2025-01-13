@@ -1,41 +1,41 @@
 # These are the standard fitness disciplines available in Peloton
 FITNESS_DISCIPLINES = [
+    'bike',             # Alternative cycling reference
     'bike_bootcamp',    # Bike Bootcamp
+    'bootcamp',         # Tread Bootcamp
     'cardio',           # Cardio
     'circuit',          # Circuit
     'cycling',          # Cycling
     'meditation',       # Meditation
+    'pilates',          # Pilates
+    'outdoor',          # Outdoor activities
+    'rowing',           # Rowing
     'running',          # Running (includes indoor/outdoor)
     'strength',         # Strength
     'stretching',       # Stretching
-    'walking',          # Walking (includes indoor/outdoor)
-    'yoga',             # Yoga
-    'bootcamp',         # Tread Bootcamp
-    'rowing',           # Rowing
-    'pilates',          # Pilates
-    'bike',             # Alternative cycling reference
     'tread',            # Alternative treadmill reference
-    'outdoor'           # Outdoor activities
+    'walking',          # Walking (includes indoor/outdoor)
+    'yoga'             # Yoga
 ]
 
 # More detailed mapping with display names
 FITNESS_DISCIPLINE_DISPLAY_NAMES = {
+    'bike': 'Cycling',
     'bike_bootcamp': 'Bike Bootcamp',
+    'bootcamp': 'Tread Bootcamp',
     'cardio': 'Cardio',
     'circuit': 'Circuit',
     'cycling': 'Cycling',
     'meditation': 'Meditation',
+    'outdoor': 'Outdoor',
+    'pilates': 'Pilates',
+    'rowing': 'Rowing',
     'running': 'Running',
     'strength': 'Strength',
     'stretching': 'Stretching',
-    'walking': 'Walking',
-    'yoga': 'Yoga',
-    'bootcamp': 'Tread Bootcamp',
-    'rowing': 'Rowing',
-    'pilates': 'Pilates',
-    'bike': 'Cycling',
     'tread': 'Treadmill',
-    'outdoor': 'Outdoor'
+    'walking': 'Walking',
+    'yoga': 'Yoga'
 }
 
 # Function to get display name

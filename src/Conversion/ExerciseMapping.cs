@@ -140,9 +140,19 @@ public static class ExerciseMapping
 		/* Wide Grip Chest Press */ { "94e3c37e0cb245f78e195b115a400112", new (ExerciseCategory.BenchPress, BenchPressExerciseName.WideGripBarbellBenchPress) },
 		/* Wide Grip Bent Over Row */ { "d861cb497fcc4e1cba994b7a949a3bac", new (ExerciseCategory.Row, RowExerciseName.WideGripSeatedCableRow) },
 		/* Wide Grip Overhead Press */ { "258884d9586b45b3973228147a6b0c48", new (ExerciseCategory.ShoulderPress, ShoulderPressExerciseName.OverheadDumbbellPress) },
+		/* Wrist Curl */ { "d5dfeae09db149fca2c5781d0478e87b", new (Curl, CurlExerciseName.StandingDumbbellBicepsCurl) },
 
 		// Z
 		/* Zottman Curl */ { "96b11092c5064b779b371462e2509e82", new (ExerciseCategory.Curl, CurlExerciseName.StandingAlternatingDumbbellCurls) }, // Zottman exists in Connect but not in SDK definition
+
+		// UNVERIFIED
+		/* Front Raise Circles */ { "e099e49b59564ef4a7198bf87cdc1446", new (ExerciseCategory.LateralRaise, LateralRaiseExerciseName.FrontRaise) },
+		/* Narrow-Grip Overhead Press */ { "3caccc04fea1402cab9887ce589833ea", new (ExerciseCategory.ShoulderPress, ShoulderPressExerciseName.OverheadDumbbellPress) },
+		/* Single Arm Press */ { "97f0a46ff7ad4f03ac9b2cfac96e3b40", new (ExerciseCategory.ShoulderPress, ShoulderPressExerciseName.OverheadDumbbellPress) },
+		/* Single Arm Bicep Curl */ { "a466cebb07794281a367dd686794aa62", new (Curl, CurlExerciseName.StandingDumbbellBicepsCurl) },
+		/* Single Arm Row */ { "2c321111492b4e249d12388d98c1cc16", new (Row, RowExerciseName.DumbbellRow) },
+		/* Wide Row */ { "f05ccd12e95c49aa93ac66bff7ec8df0", new (ExerciseCategory.Row, RowExerciseName.WideGripSeatedCableRow) },
+		/* W-Y's */ { "52dfd0316bd94aae9e461d8d3a69dff1", new (ExerciseCategory.LateralRaise, LateralRaiseExerciseName.SeatedLateralRaise) },
 	};
 
 	public static bool IsRest(this string pelotonExerciseId)
