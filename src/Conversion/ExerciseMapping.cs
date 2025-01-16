@@ -154,9 +154,9 @@ public static class ExerciseMapping
 		/* Wide Row */ { "f05ccd12e95c49aa93ac66bff7ec8df0", new (ExerciseCategory.Row, RowExerciseName.WideGripSeatedCableRow) },
 		/* W-Y's */ { "52dfd0316bd94aae9e461d8d3a69dff1", new (ExerciseCategory.LateralRaise, LateralRaiseExerciseName.SeatedLateralRaise) },
 
-		/* L Raise */ { "09803928f5484ec3bbe9df6b8e08c098", new (ExerciseCategory.LateralRaise, LateralRaiseExerciseName.SeatedLateralRaise) },
-		/* Wide Row */ { "f05ccd12e95c49aa93ac66bff7ec8df0", new (ExerciseCategory.Row, RowExerciseName.WideGripSeatedCableRow) },
-		/* Incline Crush Press */ { "0b86938b998747c79aaf7aeff2d9a3d6", new (ExerciseCategory.BenchPress, BenchPressExerciseName.CloseGripBarbellBenchPress) },
+		/* L Raise */ { "09803928f5484ec3bbe9df6b8e08c098", new (ExerciseCategory.LATERAL_RAISE, LateralRaiseExerciseName.SEATED_LATERAL_RAISE) },
+		/* *Wide Row */ { "f05ccd12e95c49aa93ac66bff7ec8df0", new (ExerciseCategory.Row, RowExerciseName.WideGripSeatedCableRow) },
+		/* *Incline Crush Press */ { "0b86938b998747c79aaf7aeff2d9a3d6", new (ExerciseCategory.BenchPress, BenchPressExerciseName.CloseGripBarbellBenchPress) },
 		/* Internal-External Rotation */ { "3c86994628034649b621a3f969e66050", new (ExerciseCategory.ShoulderPress, ShoulderPressExerciseName.OverheadDumbbellPress) },
 		/* Cuban Press */ { "f2ed35701f764f599f3b54a12d8d8fb8", new (ExerciseCategory.ShoulderPress, ShoulderPressExerciseName.OverheadDumbbellPress) },
 		/* Deltoid Fly */ { "c3ffa84f725d4084a58f9a73be111a16", new (ExerciseCategory.Flye, FlyeExerciseName.DumbbellFlye) },
