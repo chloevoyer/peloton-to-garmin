@@ -47,7 +47,7 @@
       "MinimumLevel": {
         "Default": "Information",
         "Override": {
-          "Microsoft": "Error",
+          "Microsoft": "Debug",
           "System": "Error"
         }
       }
