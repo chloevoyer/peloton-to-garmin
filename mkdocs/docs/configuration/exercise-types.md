@@ -1,26 +1,18 @@
 # Exercise Types
 
 ```json
-  Bike Bootcamp
-  Bootcamp
+  BikeBootcamp
   Cardio
-  Cycling
   Circuit
+  Cycling
   Meditation
-  Outdoor
-  Outdoor Cycling
-  Outdoor Running
-  Outdoor Walking
-  Pilates
+  OutdoorCycling
+  OutdoorRunning
+  OutdoorWalking
   Rowing
-  Row Bootcamp
-  Running
   Strength
   Stretching
-  Tread
-  Tread Bootcamp
-  Treadmill Running
-  Treadmill Walking
-  Walking
+  TreadmillRunning 
+  TreadmillWalking
   Yoga
 ```
