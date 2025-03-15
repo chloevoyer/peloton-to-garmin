@@ -1,0 +1,25 @@
+name: 🏠 Housekeeping Tasks
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 0 2 * * # bi-monthly
+
+jobs:
+
+  create_issue:
+    name: Create Dependency Update Ticket
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create Dependency Update Ticket
+        uses: imjohnbo/issue-bot@v3
+        with:
+          labels: "enhancement"
+          title: "[Housekeeping] Dependency Bump"
+          body: |
+            ### Tasks
+            - [ ] Bump all Dependencies to latest
+          pinned: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
