@@ -10,6 +10,6 @@ namespace Common
 		public const string ClientUIName = "p2g_clientui";
 		public const string AppVersion = "4.3.1-rc";
 
-		public const string AppVersion = "5.0.1";
+		public const string AppVersion = "6.0.0-rc";
 	}
 }
